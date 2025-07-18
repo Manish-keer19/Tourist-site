@@ -30,12 +30,7 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
-  const toggleTheme = () => {
-    const newMode = !darkMode;
-    setDarkMode(newMode);
-    localStorage.setItem('darkMode', newMode);
-    document.documentElement.classList.toggle('dark');
-  };
+ 
 
   const navItems = [
     { name: 'Home', path: '/' },
@@ -88,7 +83,7 @@ function Navbar() {
 
             {/* Theme Toggle */}
             <button
-              onClick={toggleTheme}
+              
               className="p-2 ml-2 rounded-full focus:outline-none transition-all duration-300 hover:bg-gray-200 dark:hover:bg-gray-700"
               aria-label="Toggle dark mode"
             >
@@ -192,7 +187,7 @@ function Navbar() {
             </Link>
           ))}
           <button
-            onClick={toggleTheme}
+         
             className="w-full text-left px-3 py-3 rounded-md text-base font-medium flex items-center justify-between text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
           >
             {darkMode ? 'Light Mode' : 'Dark Mode'}

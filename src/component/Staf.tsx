@@ -1,78 +1,3 @@
-// import React from 'react';
-// import rajesh from "../assets/rajesh.jpg"
-
-// // Staff data with only name and image
-// const staffData = [
-  // {
-  //   name: "Rajesh Keer",
-  //   image: rajesh
-  // },
-  // {
-  //   name: "Priya Sharma",
-  //   image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-  // },
-  // {
-  //   name: "Amit Patil",
-  //   image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-  // },
-  // {
-  //   name: "Neeta Deshpande",
-  //   image: "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-  // },
-  // {
-  //   name: "Sanjay Verma",
-  //   image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-  // },
-  // {
-  //   name: "Meena Yadav",
-  //   image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-  // }
-// ];
-
-// function Staff() {
-//   return (
-//     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-//       {/* Page Header */}
-//       <div className="text-center mb-16">
-//         <h1 className="text-4xl font-bold text-gray-900 mb-4">Our Team</h1>
-//         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-//           The faces behind Sant Singaji Tourist Group
-//         </p>
-//       </div>
-
-//       {/* Staff Grid - Minimalist Design */}
-//       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 max-w-6xl mx-auto">
-//         {staffData.map((member, index) => (
-//           <div 
-//             key={index} 
-//             className="group flex flex-col items-center"
-//           >
-//             {/* Circular Image with Elegant Border */}
-//             <div className="relative w-32 h-32 mb-4 rounded-full overflow-hidden border-4 border-white shadow-lg group-hover:shadow-xl transition-all duration-300">
-//               <img 
-//                 src={member.image} 
-//                 alt={member.name} 
-//                 className="w-full h-full object-contain"
-//               />
-//               {/* Subtle overlay on hover */}
-//               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
-//             </div>
-            
-//             {/* Name with elegant typography */}
-//             <h3 className="text-lg font-medium text-gray-800 text-center">{member.name}</h3>
-//           </div>
-//         ))}
-//       </div>
-
-//       {/* Decorative Footer Element */}
-//       <div className="mt-20 flex justify-center">
-//         <div className="h-1 w-24 bg-amber-500 rounded-full"></div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Staff;
 
 
 
@@ -80,10 +5,6 @@
 
 
 
-
-
-
-import React from 'react';
 import { motion } from 'framer-motion';
 import rajesh from "../assets/rajesh.jpg";
 
@@ -181,12 +102,7 @@ function Staff() {
             </div>
             
             <h3 className="text-lg font-medium text-center">{member.name}</h3>
-            <p 
-              className="text-sm mt-1 text-center"
-              style={{ color: COLORS.text.accent }}
-            >
-              {member.role}
-            </p>
+           
           </motion.div>
         ))}
       </div>

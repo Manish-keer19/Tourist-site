@@ -738,7 +738,7 @@ function Places() {
   };
 
   // Content based on language
-  const content = {
+  const content:any = {
     hindi: {
       header: {
         title: "संत सिंगाजी टूरिस्ट पार्टी",
@@ -1166,7 +1166,7 @@ function Places() {
   };
 
   // Get icons based on type
-  const getIcon = (iconType) => {
+  const getIcon = (iconType:any) => {
     switch (iconType) {
       case 'spiritual':
         return (
@@ -1271,7 +1271,7 @@ function Places() {
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {content[language].overview.highlights.map((highlight, index) => (
+          {content[language].overview.highlights.map((highlight:any, index:any) => (
             <motion.div
               key={index}
               whileHover={{ y: -5 }}
@@ -1295,7 +1295,7 @@ function Places() {
         </h2>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {content[language].sacredPlaces.map((place, index) => (
+          {content[language].sacredPlaces.map((place:any, index:any) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -1329,7 +1329,7 @@ function Places() {
         </h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {content[language].upcomingTours.map((tour, index) => (
+          {content[language].upcomingTours.map((tour:any, index:any) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -1351,7 +1351,7 @@ function Places() {
                   {language === 'hindi' ? 'मुख्य आकर्षण' : 'Highlights'}
                 </h4>
                 <ul className="space-y-2">
-                  {tour.highlights.map((highlight, i) => (
+                  {tour.highlights.map((highlight:any, i:any) => (
                     <li key={i} className="flex items-start">
                       <span className="mr-2" style={{ color: COLORS.text.accent }}>•</span>
                       <span>{highlight}</span>
@@ -1397,7 +1397,7 @@ function Places() {
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {content[language].experience.points.map((point, index) => (
+          {content[language].experience.points.map((point:any, index:any) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -1429,7 +1429,7 @@ function Places() {
         </h2>
         
         <ul className="space-y-3">
-          {content[language].rules.points.map((rule, index) => (
+          {content[language].rules.points.map((rule:any, index:any) => (
             <motion.li
               key={index}
               initial={{ opacity: 0, x: -20 }}

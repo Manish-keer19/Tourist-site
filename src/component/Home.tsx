@@ -210,7 +210,6 @@
 
 
 
-import React from 'react';
 import { motion } from 'framer-motion';
 import rajesh from "../assets/rajesh.jpg";
 import singaji from "../assets/singaji.jpeg";
