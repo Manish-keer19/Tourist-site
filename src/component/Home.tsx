@@ -212,7 +212,8 @@
 
 import { motion } from 'framer-motion';
 // import rajesh from "../assets/rajesh.jpg";
-import hari from "../assets/hari.jpg"
+// import hari from "../assets/hari.jpg"
+import haridada from  '../assets/WhatsApp Image 2025-08-11 at 15.33.37_6dc47288.jpg'
 import singaji from "../assets/singaji.jpeg";
 
 
@@ -226,7 +227,7 @@ const OWNER_DETAILS = {
     "उनका उद्देश्य केवल यात्रा नहीं, बल्कि हर व्यक्ति को आध्यात्मिक शांति और सच्चे दर्शन का अनुभव कराना है।",
     "वे श्रद्धालुओं को हर प्रमुख धार्मिक स्थल – जैसे उज्जैन, काशी, वृंदावन, हरिद्वार, अयोध्या, द्वारका आदि – पर दर्शन कराते हैं, और उनकी यात्रा को एक पवित्र अनुभव में बदलते हैं।"
   ],
-  imageUrl: hari,
+  imageUrl: haridada,
 };
 
 const PAGE_CONTENT = {
